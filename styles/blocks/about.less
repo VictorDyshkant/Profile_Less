@@ -1,0 +1,85 @@
+//main: ../style.less
+
+.about__inner{
+    display: flex;
+    max-width: 1084px;
+    flex-wrap: wrap;
+}
+
+.about__img{
+    width: 50%;
+    img{
+        max-width: 100%;
+    }
+    
+    position: relative;
+    &:before{
+        content: "";
+        position: absolute;
+        left: 15px;
+        bottom: 0;
+        z-index: -1;
+
+        width: 413px;
+        height: 413px;
+        background-color: #efefef;
+    }
+
+    @media @large{
+        &:before{
+            top: 0;
+            width: 350px;
+            height: 350px;
+        }
+    }
+    @media @tablet{
+        width: 100%;
+    }
+}
+
+.about__content{
+    width: 50%;
+
+    padding-left: 60px;
+    padding-top: 40px;
+
+    h1{
+        white-space: nowrap;
+        text-transform: uppercase;
+        font-size: 3rem;
+    }
+    h2{        
+        white-space: nowrap;
+        font-size: 6rem;
+        text-transform: uppercase;
+        color:#dedede;
+
+        @media @large{
+            font-size: 4rem;
+        }
+    }
+    h5{
+        font-size: 0.8rem;
+        color:#a6a6a7;
+        line-height: 1.5;
+    }
+
+    @media @large{
+        padding-left: 30px;
+        padding-top: 20px;
+    }
+    @media @tablet{
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.about--btns{
+    @media @large{
+        margin-top: 30px;
+    }  
+    @media @tablet{
+        display: flex;
+        justify-content: center;
+    }  
+}

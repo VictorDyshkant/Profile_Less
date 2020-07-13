@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="./styles/style.css">
+
+    <script src="https://use.fontawesome.com/c83f7d7567.js"></script>
+    <title>Portfolio</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="avatar">
+                    <div class="avatar__img">
+                        <img src="./images/face.png" alt="avatar">
+                    </div>
+                    <div class="header__text">
+                        <div class="name">Victor</div>
+                        <div class="name">Dyshkant</div>
+                        <div class="position">C# Developer</div>
+                    </div>
+                </div>
+                <nav class="nav" id="nav">
+                    <a class="nav__link active" href="#">Work</a>
+                    <a class="nav__link" href="#">About me</a>
+                    <a class="nav__link" href="#">Blog</a>
+                    <a class="nav__link" href="#">Contact</a>
+                    <a class="nav__link nav__link--btn" data-modal-show="#modal__hireme" href="#">Hire me</a>
+                </nav>
+
+                <div class="burger" id="burger">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="intro">
+        <div class="container">
+            <div class="intro__inner">
+                <div class="intro__content">
+                    <div class="intro__text">
+                        <div class="hello">Hello, I am</div>
+                        <div class="intro__name">Victor Dyshkant</div>
+                        <div class="inner__position">C# Developer</div>
+                    </div>
+                    <nav class="social__medias">
+                        <a class="nav__media"><img src="./images/social-medias/Be.png"></a>
+                        <a class="nav__media"><img src="./images/social-medias/Dribbble.png"></a>
+                        <a class="nav__media"><img src="./images/social-medias/In.png"></a>
+                        <a class="nav__media"><img src="./images/social-medias/Fb.png"></a>
+                        <a class="nav__media"><img src="./images/social-medias/Instagram.png"></a>
+                        <a class="nav__media"><img src="./images/social-medias/Twitter.png"></a>
+                    </nav>
+                    <div class="btns intro__btns">
+                        <div class="btn" data-modal-show="#modal__hireme">Hire me</div>
+                        <div class="btn" data-modal-show="#modal__resume">See my resume</div>
+                    </div>
+                </div>
+
+                <div class="inner__photo">
+                    <img src="./images/photo.png" alt="">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="works">
+        <div class="container">
+            <div class="works__inner">
+
+                <div class="works__nav">
+                    <a href="#" class="works__link" data-filter="All">All</a>
+                    <a href="#" class="works__link" data-filter="App">App</a>
+                    <a href="#" class="works__link" data-filter="Website">Website</a>
+                    <a href="#" class="works__link" data-filter="Interaction">Interaction</a>
+                </div>
+
+                <div class="portfolio">
+                    <div class="portfolio__div" data-cat="App">
+                        <div class="portfolio__item">
+                            <img src="https://placehold.it/370x320" alt="" class="portfolio__img">
+                            <div class="portfolio__content">
+                                <div class="portfolio__cat">Category : App</div>
+                                <div class="portfolio__data">
+                                    <h2>Project Title</h2>
+                                    <h2>2018</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio__div" data-cat="Website">
+                        <div class="portfolio__item">
+                            <img src="https://placehold.it/370x320" alt="" class="portfolio__img">
+                            <div class="portfolio__content">
+                                <div class="portfolio__cat">Category : Website</div>
+                                <div class="portfolio__data">
+                                    <h2>Project Title</h2>
+                                    <h2>2018</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio__div" data-cat="Interaction">
+                        <div class="portfolio__item">
+                            <img src="https://placehold.it/370x320" alt="" class="portfolio__img">
+                            <div class="portfolio__content">
+                                <div class="portfolio__cat">Category : Interaction</div>
+                                <div class="portfolio__data">
+                                    <h2>Project Title</h2>
+                                    <h2>2018</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio__div" data-cat="App">
+                        <div class="portfolio__item">
+                            <img src="https://placehold.it/370x320" alt="" class="portfolio__img">
+                            <div class="portfolio__content">
+                                <div class="portfolio__cat">Category : App</div>
+                                <div class="portfolio__data">
+                                    <h2>Project Title</h2>
+                                    <h2>2018</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio__div" data-cat="Website">
+                        <div class="portfolio__item">
+                            <img src="https://placehold.it/370x320" alt="" class="portfolio__img">
+                            <div class="portfolio__content">
+                                <div class="portfolio__cat">Category : Website</div>
+                                <div class="portfolio__data">
+                                    <h2>Project Title</h2>
+                                    <h2>2018</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio__div" data-cat="Interaction">
+                        <div class="portfolio__item">
+                            <img src="https://placehold.it/370x320" alt="" class="portfolio__img">
+                            <div class="portfolio__content">
+                                <div class="portfolio__cat">Category : Interaction</div>
+                                <div class="portfolio__data">
+                                    <h2>Project Title</h2>
+                                    <h2>2018</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio__div" data-cat="App">
+                        <div class="portfolio__item">
+                            <img src="https://placehold.it/370x320" alt="" class="portfolio__img">
+                            <div class="portfolio__content">
+                                <div class="portfolio__cat">Category : App</div>
+                                <div class="portfolio__data">
+                                    <h2>Project Title</h2>
+                                    <h2>2018</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio__div" data-cat="Website">
+                        <div class="portfolio__item">
+                            <img src="https://placehold.it/370x320" alt="" class="portfolio__img">
+                            <div class="portfolio__content">
+                                <div class="portfolio__cat">Category : Website</div>
+                                <div class="portfolio__data">
+                                    <h2>Project Title</h2>
+                                    <h2>2018</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio__div" data-cat="Interaction">
+                        <div class="portfolio__item">
+                            <img src="https://placehold.it/370x320" alt="" class="portfolio__img">
+                            <div class="portfolio__content">
+                                <div class="portfolio__cat">Category : Interaction</div>
+                                <div class="portfolio__data">
+                                    <h2>Project Title</h2>
+                                    <h2>2018</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="work__btn__div">
+                    <a class="work__btn" href="#">Load more work</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="about">
+        <div class="container">
+            <div class="about__inner">
+                <div class="about__img">
+                    <img src="./images/about.png">
+                </div>
+                <div class="about__content">
+                    <h1>About me</h1>
+                    <h2>Who am I</h2>
+                    <h5>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam consectetur repellat
+                            expedita
+                            quod et ea, sit eos aperiam? Eligendi, rerum sed sint minima aspernatur veritatis
+                            reprehenderit,
+                            harum praesentium distinctio exercitationem perferendis ab ullam!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam consectetur repellat
+                            expedita
+                            quod et ea, sit eos aperiam? Eligendi, rerum sed sint minima aspernatur veritatis
+                            reprehenderit,
+                            harum praesentium distinctio exercitationem perferendis ab ullam!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam consectetur repellat
+                            expedita
+                            quod et ea, sit eos aperiam? Eligendi, rerum sed sint minima aspernatur veritatis
+                            reprehenderit,
+                            harum praesentium distinctio exercitationem perferendis ab ullam! Lorem ipsum, dolor sit
+                            amet consectetur adipisicing.</p>
+                    </h5>
+                    <div class="btns intro__btns about--btns">
+                        <div class="btn" data-modal-show="#modal__hireme">Hire me</div>
+                        <div class="btn" data-modal-show="#modal__resume">See my resume</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div style="height: 200px;"></div>
+    </div>
+
+    <div class="reviews">
+        <div class="container">
+            <div class="reviews__inner">
+                <div class="reviews__text">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        Labore neque enim commodi inventore iusto ducimus repudiandae
+                        illo at possimus quasi necessitatibus corrupti eveniet doloremque minima,
+                        tempora voluptatibus unde optio dolorum maiores exercitationem rerum esse.
+                        Sint dolorem perferendis ab deleniti architecto.</p>
+                </div>
+
+                <div class="reviews__auther">
+                    <div class="reviews__img">
+                        <img src="./images/face.png">
+                    </div>
+                    <div class="reviews__name">Victor Dyshkant</div>
+                    <div class="reviews__company">Epam Systems</div>
+                    <div class="reviews__rating">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="news">
+        <div class="container">
+            <div class="news__inner">
+                <div class="news__header">
+                    <h1>Read me</h1>
+                    <h3>Something I write something smart</h3>
+                </div>
+                <div class="news__div">
+                    <div class="news__item">
+                        <div class="news__img">
+                            <img src="https://placehold.it/370x260" alt="">
+                            <div class="news__date">
+                                <div>
+                                    10<br>june
+                                </div>
+                            </div>
+                        </div>
+
+                        <h1 class="news__head">Ten the best app in 2017</h1>
+                        <h3 class="news__category">Category</h3>
+                        <div class="news__content">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse voluptate maiores iure
+                            necessitatibus minima quisquam cumque, nesciunt blanditiis repellendus doloremque vel!
+                            Maiores, aliquam deserunt suscipit, reprehenderit sit veritatis et dolorum rem deleniti vel,
+                            iusto atque?
+                        </div>
+
+                        <div class="btns news__btns">
+                            <div class="btn">Read more</div>
+                        </div>
+                    </div>
+
+                    <div class="news__item">
+                        <div class="news__img">
+                            <img src="https://placehold.it/370x260" alt="">
+                            <div class="news__date">
+                                <div>
+                                    10<br>june
+                                </div>
+                            </div>
+                        </div>
+
+                        <h1 class="news__head">Ten the best app in 2017</h1>
+                        <h3 class="news__category">Category</h3>
+                        <div class="news__content">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse voluptate maiores iure
+                            necessitatibus minima quisquam cumque, nesciunt blanditiis repellendus doloremque vel!
+                            Maiores, aliquam deserunt suscipit, reprehenderit sit veritatis et dolorum rem deleniti vel,
+                            iusto atque?
+                        </div>
+
+                        <div class="btns news__btns">
+                            <div class="btn">Read more</div>
+                        </div>
+                    </div>
+
+                    <div class="news__item">
+                        <div class="news__img">
+                            <img src="https://placehold.it/370x260" alt="">
+                            <div class="news__date">
+                                <div>
+                                    10<br>june
+                                </div>
+                            </div>
+                        </div>
+
+                        <h1 class="news__head">Ten the best app in 2017</h1>
+                        <h3 class="news__category">Category</h3>
+                        <div class="news__content">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse voluptate maiores iure
+                            necessitatibus minima quisquam cumque, nesciunt blanditiis repellendus doloremque vel!
+                            Maiores, aliquam deserunt suscipit, reprehenderit sit veritatis et dolorum rem deleniti vel,
+                            iusto atque?
+                        </div>
+
+                        <div class="btns news__btns">
+                            <div class="btn">Read more</div>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="#" class="news__link">See more posts</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__nav__left">
+                    <div class="footer__text">
+                        2018 U143 - Free Templates
+                    </div>
+                    <div class="line"></div>
+                    <div class="footer__icons">
+                        <i class="fa fa-dribbble" aria-hidden="true"></i>
+                        <i class="fa fa-linkedin" aria-hidden="true"></i>
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </div>
+                </div>
+
+                <nav class="footer__nav__right">
+                    <a class="footer__nav__link active" href="#">Work</a>
+                    <a class="footer__nav__link" href="#">Adout me</a>
+                    <a class="footer__nav__link" href="#">Blog</a>
+                    <a class="footer__nav__link" href="#">Contact</a>
+                    <a class="footer__nav__link footer__nav__link--btn" data-modal-show="#modal__hireme" href="#">Hire me</a>
+                </nav>
+
+                <div class="burger__footer">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal" id="modal__resume">
+        <div class="modal__dialog">
+            <button type="button" class="modal__close" data-modal-close="#modal__resume">
+                <i class="fa fa-times-circle" aria-hidden="true"></i>
+            </button>
+
+            <div class="modal__work">
+                <div class="modal__work__preview">
+                    <img src="https://placehold.it/790x780" alt="">
+                </div>
+
+                <div class="modal__work__content">
+                    <h3 class="modal__work__title">Project title</h3>
+                    <div class="modal__work__info">category <span class="diviter">|</span> 2018</div>
+
+                    <div class="modal__work__client">
+                        <div>Client: Viva</div>
+                        <div>Creative Agency</div>
+                    </div>
+
+                    <div class="modal__work__text">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Molestiae asperiores veritatis mollitia ab eligendi provident
+                            autem numquam eius nihil dolorem vitae maiores a aut animi quos
+                            enim repellendus error nobis est ipsa, doloribus maxime sunt
+                            veniam quod? Quia porro possimus, laborum non at ipsum beatae
+                            molestiae cupiditate. Sequi, fugit vel.
+                        </p>
+                        <br>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Molestiae asperiores veritatis mollitia ab eligendi provident
+                            autem numquam eius nihil dolorem vitae maiores a aut animi quos
+                            enim repellendus error nobis est ipsa, doloribus maxime sunt
+                            veniam quod? Quia porro possimus, laborum non at ipsum beatae
+                            molestiae cupiditate. Sequi, fugit vel.
+                        </p>
+                    </div>
+
+                    <div class="model__work__footer">
+                        <button class="model__work__btn">Previous</button>
+                        <button class="model__work__btn">Next</button>
+                    </div>
+                </div>
+            </div><!-- modal__work -->
+        </div><!-- modal__dialog -->
+    </div><!-- modal -->
+
+    <div class="modal" id="modal__hireme">
+        <div class="modal__dialog modal__dialog--sm">
+            <button type="button" class="modal__close" data-modal-close="#modal__hireme">
+                <i class="fa fa-times-circle" aria-hidden="true"></i>
+            </button>
+
+            <div class="contact">
+                <div class="contact__left">
+                    <h3 class="modal__title mb-0">Let's talk!</h3>
+                    <div class="modal__subtitle">Call me or send me a request</div>
+
+                    <ul class="contact__info">
+                        <li class="contact__info__item">
+                            <i class="fa fa-phone-square" aria-hidden="true"></i>068 281 97 37
+                        </li>
+                        <li class="contact__info__item">
+                            <i class="fa fa-envelope" aria-hidden="true"></i>dyshkant2804@ukr.net
+                        </li>
+                    </ul>
+
+                    <form class="form" action="/" method="post">
+                        <div class="form__group">
+                            <label class='label' for='input-email'>Adress e-mail</label>
+                            <input class="input" id="input-email" type="text" placeholder="Adress e-mail">
+                        </div>
+                    </form>
+
+                    <button class="modal__contact__btn">Sent</button>
+                </div>
+                <div class="contact__right">
+
+                </div>
+            </div>
+        </div><!-- modal__dialog -->
+    </div><!-- modal -->
+
+     <div class="modal" style="display: none;">
+        <!--  -->
+        <div class="modal__dialog">
+            <button type="button" class="modal__close">
+                <i class="fa fa-times-circle" aria-hidden="true"></i>
+            </button>
+
+            <div class="modal__content">
+                <h3 class="modal__content__title">Resume</h3>
+                <div class="modal__btns">
+                    <a href="#" class="modal__btn">Download Pdf</a>
+                    <a href="#" class="modal__btn">Print</a>
+                </div>
+
+                <div class="timeline">
+                    <div class="timeline__col timeline__col--right">
+                        <h4 class="timeline__title">Experience</h4>
+                    </div>
+                    <div class="timeline__col timeline__col--left">
+                        <h4 class="timeline__title">Education</h4>
+                    </div>
+                </div>
+            </div>
+        </div><!-- modal__dialog -->
+    </div><!-- modal -->
+
+    <script src="script.js"></script>
+</body>
+
+</html>

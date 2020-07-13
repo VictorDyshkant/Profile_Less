@@ -1,0 +1,132 @@
+//main: ../style.less
+.header{
+    padding-top: 1.4rem;
+    @media @phone {
+        position: fixed;
+        width: 100%;
+        background-color: white;
+        z-index: 5;
+    }
+}
+.header__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.avatar{
+     display: flex;
+    
+     .avatar__img{
+        width: 57px;
+        height: 57px;
+        border-radius: 50%;
+        background-color: #2b2a2c;
+        overflow: hidden;
+        
+        img{
+        width: 100%;
+        max-width: 100%;
+    }  
+    }
+}
+
+.header__text{
+    margin-left: 0.8rem;
+    text-align: left;
+
+    .name{
+        color:#2b2a2c
+    }
+    .position{
+        font-size: 0.75rem;
+        margin-top: 3px;
+        color:rgba(#2b2a2c,0.7)
+    }
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+
+    @media @tablet{
+        display: none;
+    }
+}
+
+.burger{
+    display: none;
+    font-size: 42px;
+    i{
+        cursor: pointer;
+    }
+
+    @media @tablet{
+        display: block;
+    }
+}
+
+.nav__link{
+    font-size: 14px;
+    font-weight: 700;
+    position: relative;
+
+    margin-left: 40px;
+    color: black;
+
+    white-space: nowrap;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    &:first-child{
+        margin-left: 0;
+    }
+
+    &:after{
+        content: "";
+        display: block;
+        position: absolute;
+        height: 3px;
+        width: 0;
+        left: 0;
+        background-color: black;
+
+        transition: width 0.5s linear;
+    }
+
+    &:hover:not(&--btn){
+        &:after{
+            width: 100%;
+        }
+    }
+
+    &--btn{
+        padding: 10px 30px;
+        border-radius: 25px;
+        border: 3px solid black;
+
+        transition: color,background-color 0.5s linear;
+        &:hover{
+            color: white;
+            background-color: black;
+        }
+    }
+}
+
+.nav--show{
+    display: block;
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    top: 100%;
+    background-color: white;
+    text-align: center;
+    
+    .nav__link{
+        margin-left: 0px;
+        padding: 5px 0;
+        width: 100%;
+        display: block;
+    }
+}

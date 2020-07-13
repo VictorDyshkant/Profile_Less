@@ -1,0 +1,39 @@
+// main : ../style.less
+
+.timeline{
+    display: flex;
+    width: 100%;
+    margin: 60px auto;
+    max-width: 768px;
+    position: relative;
+
+    &::before{
+        position: absolute;
+        left: 50%;
+        top: 0;
+        content: "";
+        height: 100%;
+        width: 1px;
+        background-color: gray;
+    }
+}
+    
+
+.timeline__col{
+    width: 50%;
+    &--right{
+        text-align: right;
+        margin-right: 43px;
+    }
+    
+    &--left{
+        text-align: left;
+        margin-left: 43px;
+    }
+}
+.timeline__title{
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+}
+

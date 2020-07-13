@@ -1,0 +1,123 @@
+// main : ../style.less
+
+.footer{
+    background-color: #2b2a2c;
+    padding: 20px 0;
+    margin-top: 120px;
+
+    @media @tablet {
+        margin-top: 60px;
+    }
+}
+
+
+.footer__inner{
+    display: flex;
+    justify-content: space-between;
+    
+    color:#8d8d8e;
+}
+
+.footer__nav__left{
+    display: flex;
+
+    .line{
+        height: 100%;
+        margin: 0 15px;
+        width: 1px;
+        background-color:#8d8d8e;
+    }
+
+    .footer__icons{
+        i{
+            padding-right : 15px;
+            cursor: pointer;
+
+            transition: color 0.2s linear;
+            &:hover{
+              color: white;
+            }
+
+            @media @phone {
+                font-size: 0.7rem;
+            }
+        }
+    }
+}
+
+.burger__footer{
+    display: none;
+    transition: color 0.2s linear;
+    &:hover{
+        color: white;
+    }
+    
+    i{
+        cursor: pointer;
+        @media @phone {
+            font-size: 0.7rem;
+        }
+    }
+
+    @media @tablet {
+        display: block;
+    }
+}
+
+    .footer__nav__link{ 
+        color:#8d8d8e;
+        position: relative;
+        font-size: 14px;
+        text-decoration: none;
+        margin-left: 20px;
+        
+        transition: color 0.5s linear;
+        
+        &--btn{
+            padding: 10px 22px;
+            border-radius: 25px;
+            border: 2px solid #8d8d8e;
+            text-transform: uppercase;
+
+            transition: border, color 0.5s linear;
+             &:hover{
+                color:white;
+                border: 2px solid white;
+            }
+        }
+        
+        &:after{
+            content: "";
+            background-color: white;
+            display: block;
+            position: absolute;
+            
+            height: 2px;
+            width: 0px;
+            left: 0px;
+            
+            transition: width 0.5s linear;
+        }
+
+        &:hover:not(&--btn){
+            &:after{
+                width: 100%;
+            }
+            color: white;
+        }
+
+        @media @large {
+            margin-left: 10px;
+        }
+        @media @tablet {
+            display: none;
+        }
+    }    
+
+.footer__text{
+    display: flex;
+    align-items: center;
+    @media @phone {
+        font-size: 0.7rem;
+    }
+}
